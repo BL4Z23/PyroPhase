@@ -93,7 +93,7 @@ def main():
                 print(f"{i}/{len(futures)} batches", flush=True)
 
     cells = SIZE_OF_BOARDS ** 2
-    with open("output.csv", "w", newline="", encoding="utf-8") as f:
+    with open("Results/output.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(HEADERS)
         for division in sorted(totals):
